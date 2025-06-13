@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: debug-statements
+      - id: name-tests-test
+      - id: requirements-txt-fixer
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.27.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+      - id: commitizen-branch
+        stages: [push]
+
+  - repo: local
+    hooks:
+      # TODO: make a generic script that accepts --command and --files extension params to run on this
+      - id: prettier
+        name: Prettier
+        entry: ./scripts/pre-commit-prettier.sh
+        language: script
+        files: \.(html|css|js)$
