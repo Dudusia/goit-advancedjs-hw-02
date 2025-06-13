@@ -1,5 +1,11 @@
 # Changelog goit-advancedjs-hw-02
 
+## [1.0.3](https://gitlab.com/goit-uni/js-adv/goit-advancedjs-hw-02/compare/1.0.2...1.0.3) (2025-06-13)
+
+### Bug Fixes
+
+* update deps again ([76affc9](https://gitlab.com/goit-uni/js-adv/goit-advancedjs-hw-02/commit/76affc97a182ffd22c7c97a03491ab63389d74da))
+
 ## [1.0.2](https://gitlab.com/goit-uni/js-adv/goit-advancedjs-hw-02/compare/1.0.1...1.0.2) (2025-06-13)
 
 ### Bug Fixes
